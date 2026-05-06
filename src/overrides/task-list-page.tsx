@@ -193,13 +193,7 @@ export async function TaskListPageOverride({ task, category }: { task: TaskKey; 
                               {meta.category}
                             </span>
                           )}
-                          {post.publishedAt && (
-                            <span className="inline-flex items-center gap-1 text-xs text-[#511D43]/60">
-                              <Calendar className="h-3 w-3" />
-                              {formatDate(post.publishedAt)}
-                            </span>
-                          )}
-                        </div>
+                                                  </div>
                         <h3 className="mt-3 text-lg font-semibold text-[#511D43] group-hover:text-[#901E3E]">{post.title}</h3>
                         {post.summary && <p className="mt-2 line-clamp-2 text-sm leading-6 text-[#511D43]/75">{post.summary}</p>}
                         <div className="mt-4 flex items-center justify-between">
