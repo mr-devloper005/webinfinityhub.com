@@ -8,12 +8,6 @@ import { SITE_CONFIG } from '@/lib/site-config'
 
 export const CONTACT_PAGE_OVERRIDE_ENABLED = true
 
-const channels = [
-  { icon: Mail, title: 'Email us', value: 'hello@webinfinityhub.com', body: 'For partnerships, press, and general questions.' },
-  { icon: MessageCircle, title: 'Library support', value: 'support@webinfinityhub.com', body: 'Trouble with a download or a profile? Start here.' },
-  { icon: Phone, title: 'Call us', value: '+1 (555) 010-2026', body: 'Mon–Fri, 9am–5pm in your local timezone.' },
-]
-
 const offices = [
   { city: 'Remote-first', region: 'Worldwide', detail: 'Our team works from 14 countries across 8 timezones.' },
   { city: 'Berlin', region: 'Germany', detail: 'A small studio space for European meetups.' },
@@ -74,27 +68,7 @@ export function ContactPageOverride() {
           <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
             <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
               <div>
-                <p className="text-sm font-medium text-[#901E3E]">Pick a channel</p>
-                <h2 className="mt-2 text-3xl font-semibold tracking-[-0.02em] text-[#511D43] sm:text-4xl">
-                  However you prefer to reach us.
-                </h2>
-
-                <div className="mt-10 space-y-4">
-                  {channels.map((c) => (
-                    <div key={c.title} className="rounded-2xl border border-[#511D43]/15 bg-white p-6">
-                      <div className="flex items-start gap-4">
-                        <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#FBE580]">
-                          <c.icon className="h-5 w-5 text-[#511D43]" />
-                        </div>
-                        <div className="min-w-0">
-                          <h3 className="text-base font-semibold text-[#511D43]">{c.title}</h3>
-                          <p className="mt-0.5 text-sm font-medium text-[#901E3E]">{c.value}</p>
-                          <p className="mt-2 text-sm leading-6 text-[#511D43]/75">{c.body}</p>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
+                <p className="text-sm font-medium text-[#901E3E]">How we work</p>
 
                 <div className="mt-6 rounded-2xl border border-[#511D43]/15 bg-[#511D43] p-6 text-[#FBE580]">
                   <div className="flex items-start gap-3">

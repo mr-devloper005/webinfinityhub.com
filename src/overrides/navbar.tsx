@@ -19,7 +19,6 @@ const NavbarAuthControls = dynamic(
 const navLinks = [
   { label: 'Home', href: '/' },
   { label: 'PDF Library', href: '/pdf' },
-  { label: 'Profiles', href: '/profile' },
   { label: 'About Us', href: '/about' },
   { label: 'Contact Us', href: '/contact' },
 ]
