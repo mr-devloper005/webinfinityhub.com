@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { Facebook, Instagram, Twitter, Youtube, Linkedin } from 'lucide-react'
 import { SITE_CONFIG } from '@/lib/site-config'
 
 export const FOOTER_OVERRIDE_ENABLED = true
@@ -18,26 +17,18 @@ const columns = [
     title: 'Platform',
     links: [
       { label: 'PDF Library', href: '/pdf' },
-      { label: 'Profiles', href: '/profile' },
       { label: 'Search', href: '/search' },
       { label: 'Help Center', href: '/help' },
     ],
   },
 ]
 
-const socials = [
-  { icon: Facebook, label: 'Facebook', href: 'https://facebook.com' },
-  { icon: Instagram, label: 'Instagram', href: 'https://instagram.com' },
-  { icon: Twitter, label: 'Twitter', href: 'https://twitter.com' },
-  { icon: Youtube, label: 'Youtube', href: 'https://youtube.com' },
-  { icon: Linkedin, label: 'Linkedin', href: 'https://linkedin.com' },
-]
 
 export function FooterOverride() {
   return (
     <footer className="bg-[#511D43] text-[#FBE580]">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-        <div className="grid gap-12 lg:grid-cols-[1.4fr_2fr_1fr]">
+        <div className="grid gap-12 lg:grid-cols-[1.4fr_2fr]">
           <div>
             <div className="flex items-center gap-2.5">
               <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-[#FBE580] p-1.5">
@@ -63,25 +54,6 @@ export function FooterOverride() {
                 </ul>
               </div>
             ))}
-          </div>
-
-          <div>
-            <h4 className="text-sm font-semibold text-white">Socials</h4>
-            <ul className="mt-5 space-y-3">
-              {socials.map((s) => (
-                <li key={s.label}>
-                  <a
-                    href={s.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2.5 text-sm text-[#FBE580]/75 transition hover:text-[#FBE580]"
-                  >
-                    <s.icon className="h-4 w-4" />
-                    {s.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
           </div>
         </div>
 

@@ -163,17 +163,14 @@ export default async function SearchPage({
                 </div>
                 <h3 className="mt-5 text-2xl font-semibold text-[#511D43]">No matches yet.</h3>
                 <p className="mx-auto mt-3 max-w-md text-sm leading-6 text-[#511D43]/75">
-                  Try a different search term, or browse the PDF Library and Profiles directly.
+                  Try a different search term, or browse the PDF Library directly.
                 </p>
                 <div className="mt-6 flex justify-center gap-3">
                   <Link href="/pdf" className="inline-flex items-center gap-2 rounded-full bg-[#DC2525] px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-[#901E3E]">
                     Browse PDFs
                     <ArrowRight className="h-4 w-4" />
                   </Link>
-                  <Link href="/profile" className="inline-flex items-center gap-2 rounded-full border border-[#511D43]/20 bg-white px-5 py-2.5 text-sm font-semibold text-[#511D43] transition hover:border-[#511D43]/40">
-                    View Profiles
-                  </Link>
-                </div>
+                                  </div>
               </div>
             ) : (
               <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">

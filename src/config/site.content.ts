@@ -2,10 +2,10 @@ import type { TaskKey } from '@/lib/site-config'
 
 export const siteContent = {
   navbar: {
-    tagline: 'PDF + Profile platform',
+    tagline: 'PDF platform',
   },
   footer: {
-    tagline: 'PDF + Profile platform',
+    tagline: 'PDF platform',
   },
   hero: {
     badge: 'Latest stories and visuals',
@@ -16,8 +16,8 @@ export const siteContent = {
       href: '/articles',
     },
     secondaryCta: {
-      label: 'View profiles',
-      href: '/profile',
+      label: 'Browse PDFs',
+      href: '/pdf',
     },
     searchPlaceholder: 'Search stories, visuals, listings, and more',
     focusLabel: 'Focus',
@@ -67,8 +67,8 @@ export const siteContent = {
       href: '/articles',
     },
     secondaryCta: {
-      label: 'View profiles',
-      href: '/profile',
+      label: 'Browse PDFs',
+      href: '/pdf',
     },
   },
   taskSectionHeading: 'Latest {label}',
@@ -120,7 +120,6 @@ export const taskIntroCopy: Record<
     links: [
       { label: 'Read articles', href: '/articles' },
       { label: 'Explore classifieds', href: '/classifieds' },
-      { label: 'View profiles', href: '/profile' },
     ],
   },
   article: {
@@ -146,7 +145,6 @@ export const taskIntroCopy: Record<
     links: [
       { label: 'Business listings', href: '/listings' },
       { label: 'Read articles', href: '/articles' },
-      { label: 'View profiles', href: '/profile' },
     ],
   },
   image: {
@@ -198,7 +196,6 @@ export const taskIntroCopy: Record<
     links: [
       { label: 'Read articles', href: '/articles' },
       { label: 'See listings', href: '/listings' },
-      { label: 'Explore profiles', href: '/profile' },
     ],
   },
   social: {

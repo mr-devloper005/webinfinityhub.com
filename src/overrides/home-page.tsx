@@ -22,7 +22,7 @@ export async function HomePageOverride() {
               </div>
               <div className="lg:pt-6">
                 <p className="text-base leading-7 text-[#511D43]/80">
-                  We&apos;ve built a curated PDF library and profile network to help you discover, download, and connect with the resources and people that move your work forward.
+                  We&apos;ve built a curated PDF library to help you discover, download, and access the resources that move your work forward.
                 </p>
                 <div className="mt-7 flex flex-wrap gap-3">
                   <Link
@@ -32,18 +32,12 @@ export async function HomePageOverride() {
                     Browse PDFs
                     <ArrowRight className="h-4 w-4" />
                   </Link>
-                  <Link
-                    href="/profile"
-                    className="inline-flex items-center gap-2 rounded-full border border-[#511D43]/30 bg-white px-6 py-3 text-sm font-semibold text-[#511D43] transition hover:border-[#511D43]/60"
-                  >
-                    View Profiles
-                  </Link>
                 </div>
               </div>
             </div>
 
             {/* Feature cards */}
-            <div className="mt-14 grid gap-5 lg:grid-cols-2">
+            <div className="mt-14">
               <FeatureCard
                 eyebrow="PDF Library"
                 title="Resources, reports, and reading you can rely on."
@@ -51,14 +45,6 @@ export async function HomePageOverride() {
                 image="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=900&q=80"
                 alt="Person reading on laptop"
                 href="/pdf"
-              />
-              <FeatureCard
-                eyebrow="Profiles"
-                title="Real people, real expertise — discoverable by topic."
-                body="Browse member profiles to find contributors, follow their work, and connect over the resources you both care about."
-                image="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=900&q=80"
-                alt="Team collaborating"
-                href="/profile"
               />
             </div>
           </div>
@@ -77,10 +63,6 @@ export async function HomePageOverride() {
                 <Bullet
                   title="We help make sure you have no gaps."
                   body="With a curated library, you get comprehensive references — not scattered PDFs lost across the internet."
-                />
-                <Bullet
-                  title="We look out for you."
-                  body="Profiles let you connect with the right people first, so you find answers and collaborators faster."
                 />
               </div>
             </div>
@@ -102,9 +84,8 @@ export async function HomePageOverride() {
                   {SITE_CONFIG.name} is a digital-first platform, using technology to make PDF access and professional discovery simpler, faster, and more rewarding.
                 </p>
 
-                <div className="mt-12 grid gap-6 sm:grid-cols-3">
+                <div className="mt-12 grid gap-6 sm:grid-cols-2">
                   <Stat icon={FileText} value="2,400+" label="PDFs available" />
-                  <Stat icon={Users} value="850+" label="Active profiles" />
                   <Stat icon={Download} value="48k+" label="Downloads served" />
                 </div>
               </div>
@@ -135,10 +116,9 @@ export async function HomePageOverride() {
               </div>
             </div>
 
-            <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-              <ValueCard icon={Search} title="Smart Search" body="Find PDFs and profiles fast with title, tag, and topic search." />
-              <ValueCard icon={ShieldCheck} title="Verified Profiles" body="Trust signals on every profile so you know who you're connecting with." />
-              <ValueCard icon={BookOpen} title="Curated Library" body="Every resource is reviewed before it lands on the shelves." />
+            <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              <ValueCard icon={Search} title="Smart Search" body="Find PDFs fast with title, tag, and topic search." />
+              <ValueCard icon={BookOpen} title="Curated Library" body="Every resource is reviewed before it lands on shelves." />
               <ValueCard icon={Download} title="Free Downloads" body="Open access — download what you need without paywalls." />
             </div>
           </div>
